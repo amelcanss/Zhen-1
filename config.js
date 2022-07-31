@@ -1,15 +1,19 @@
 let fs = require('fs') 
 let chalk = require('chalk')
+let moment = require('moment-timezone')
 
-owner = [
-  ['62895330379186'],
-  ['62895330379186'],
-  ['62895330379186', 'Owner', true]
+global.owner = [
+  ['62895345145330'],
+  ['6289673723232'],
+  ['6281233037082'],
+  ['687814426'],
+  ['687814426', 'Zhen Dev²', true],
+  ['6281233037082', 'Reyy', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-mods = [] // Want some help?
-prems = [] // Premium user has unlimited limit
-APIs = { // API Prefix
+global.mods = [] // Want some help?
+global.prems = [62895345145330] // Premium user has unlimited limit
+global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
@@ -23,7 +27,7 @@ APIs = { // API Prefix
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
   restapi: 'https://x-restapi.herokuapp.com'
 }
-APIKeys = { // APIKey Here
+global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.xteam.xyz': 'apikeyaine',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
@@ -40,8 +44,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '@ainee_bot'
-  var sticker_author = 'Aine'
+  var sticker_name = '©Zhen_md'
+  var sticker_author = 'Zhen'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -56,13 +60,19 @@ fs.watchFile(file_exif, () => {
 })
 
 // Sticker WM
-packname = sticker_name
-author = sticker_author
-wm = '© Aine'
+global.packname = sticker_name
+global.author = sticker_author
+global.wm = '© Zhen'
 
-multiplier = 1000 // The higher, The harder levelup
+// Colong
+global.colong1 = '©OWNER stc'
+global.colong2 = 'Zhen Dev'
+global.stc1 = '©OWNIE stc'
+global.stc2 = 'Nia'
 
-rpg = {
+global.multiplier = 1000 // The higher, The harder levelup
+
+global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
     let emot = {
