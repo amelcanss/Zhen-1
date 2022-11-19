@@ -3,12 +3,12 @@ let chalk = require('chalk')
 let moment = require('moment-timezone')
 
 global.owner = [
-  ['62895345145330'],
-  ['6289673723232'],
-  ['6281233037082'],
-  ['687814426'],
-  ['687814426', 'Zhen Dev²', true],
-  ['6281233037082', 'Reyy', true]
+  ['6287833306677'],
+  ['6287833306677'],
+  ['6287833306677'],
+  ['6287833306677'],
+  ['6287833306677', 'Fahil', true],
+  ['6287833306677', 'Fahil', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -62,13 +62,13 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 global.packname = sticker_name
 global.author = sticker_author
-global.wm = '© Zhen'
+global.wm = 'By Fahil'
 
 // Colong
 global.colong1 = '©OWNER stc'
-global.colong2 = 'Zhen Dev'
+global.colong2 = 'By Fahil'
 global.stc1 = '©OWNIE stc'
-global.stc2 = 'Nia'
+global.stc2 = 'By Fahil'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
