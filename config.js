@@ -4,15 +4,15 @@ let moment = require('moment-timezone')
 
 global.owner = [
   ['6287833306677'],
+  ['6287743906733'],
   ['6287833306677'],
-  ['6287833306677'],
-  ['6287833306677'],
+  ['6287743906733'],
   ['6287833306677', 'Fahil', true],
-  ['6287833306677', 'Fahil', true]
+  ['6287743906733', 'Dimas', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
-global.prems = [62895345145330] // Premium user has unlimited limit
+global.prems = [6287743906733] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
